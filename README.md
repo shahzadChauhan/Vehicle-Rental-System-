@@ -2,74 +2,130 @@
 
 📌 Project Overview
 
-The Vehicle Rental System is a C++ mini project developed using Object-Oriented Programming (OOP) concepts. It allows users to rent cars and bikes and automatically calculates the total rental cost based on the number of days.
+The Vehicle Rental System is a C++ mini project developed using Object-Oriented Programming (OOP) concepts. It allows users to rent cars and bikes by entering vehicle details and rental duration. The system automatically calculates the total rental amount and generates a rental bill.
 
 🎯 Objectives
 
-- To understand Object-Oriented Programming.
+- To understand Object-Oriented Programming in C++.
 - To implement inheritance and polymorphism.
-- To calculate vehicle rental charges.
-- To perform basic input validation.
-
-⚙️ Technologies Used
-
-- Programming Language: C++
-- Concepts: OOP
-- Compiler: GCC / MinGW
+- To use constructors for initializing objects.
+- To implement function overriding using virtual functions.
+- To calculate rental charges automatically.
 
 ✨ Features
 
 - Rent a Car.
 - Rent a Bike.
-- Enter Vehicle ID and Model.
-- Calculate total rental charges.
-- Validate vehicle ID and rental days.
-- Generate a rental bill.
+- Enter Vehicle ID.
+- Enter Vehicle Model.
+- Select Rental Duration.
+- Automatic Rental Cost Calculation.
+- Generate Rental Bill.
+- Validate User Input.
 
-🧠 OOP Concepts Used
+🛠️ Technologies Used
 
-1. Class and Object: Vehicle, Car and Bike classes.
-2. Inheritance: Car and Bike inherit from Vehicle.
-3. Encapsulation: Protected data members.
-4. Constructor: Initializes vehicle details.
-5. Polymorphism: Virtual function and function overriding.
-6. Function Overriding: Different rent calculations for Car and Bike.
+- Programming Language: C++
+- Concepts: Object-Oriented Programming (OOP)
+- Header Files: iostream, string
+- Platform: GitHub
 
-💰 Rental Charges
+🧠 OOP Concepts Implemented
 
-Vehicle| Rate per Day| Extra Charge
+1. Class and Object
+
+The project uses Vehicle, Car and Bike classes to represent different vehicle types.
+
+2. Inheritance
+
+Car and Bike classes inherit properties and methods from the Vehicle base class.
+
+3. Constructor
+
+Constructors initialize vehicle ID, model and rental rate.
+
+4. Polymorphism
+
+Runtime polymorphism is implemented using virtual functions.
+
+5. Function Overriding
+
+Both Car and Bike classes override the calculateRent() function to calculate rental charges differently.
+
+💰 Rental Pricing
+
+Vehicle| Rate Per Day| Extra Charge
 Car| ₹1500| ₹200
 Bike| ₹500| ₹50
 
-▶️ How to Run
+Formula:
+
+Car Rent = (Rate × Days) + ₹200
+
+Bike Rent = (Rate × Days) + ₹50
+
+▶️ How to Run the Project
 
 1. Download or clone this repository.
 2. Open the project in a C++ compiler.
-3. Compile the source file:
+3. Open "main.cpp".
+4. Compile and execute the program.
+
+Compile using GCC:
 
 g++ main.cpp -o vehicle
-
-4. Run the program:
-
 ./vehicle
+
+📸 Sample Output
+
+===== VEHICLE RENTAL SYSTEM =====
+
+1. Rent a Car
+2. Rent a Bike
+
+Enter your choice: 1
+Enter vehicle ID: 1
+Enter model name (one word): O1
+Enter rental days: 3
+
+===== CAR RENTAL BILL =====
+
+Vehicle ID: 1
+Model: O1
+Rate per day: Rs. 1500
+Rental days: 3
+Total rent: Rs. 4700
+
+[Program finished]
 
 📂 Project Structure
 
 Vehicle-Rental-System/
 │
-├── main.cpp
-└── README.md
+├── README.md
+└── main.cpp
 
-👨‍💻 Author
+🚀 Future Improvements
+
+- Add more vehicle categories.
+- Add customer information.
+- Add booking history.
+- Implement file handling.
+- Add payment functionality.
+- Develop a graphical user interface.
+
+👨‍💻 Developer
 
 Shahzad Chauhan
 
-GitHub: https://github.com/shahzadChauhan
+B.Tech – Artificial Intelligence & Data Science
 
-🎓 Project Type
+GitHub: "@shahzadChauhan" (https://github.com/shahzadChauhan)
 
-C++ Mini Project – Object-Oriented Programming (OOP)
+📜 Conclusion
+
+This project demonstrates the practical implementation of C++ Object-Oriented Programming concepts through a simple Vehicle Rental System. It helps beginners understand inheritance, constructors, polymorphism and function overriding.
 
 ---
 
-⭐ If you find this project useful, feel free to star the repository!
+⭐ If you find this project useful, don't forget to star the repository!
